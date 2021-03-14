@@ -93,6 +93,9 @@ h2 {
   color: #8c8e9b;
 }
 
+.primary-content {
+	text-align: center;
+}
 .picture {
 	width: 100%;
 }
@@ -148,6 +151,7 @@ a {
 /* Article Styles */
 .post {
 	text-align: center;
+
 	width: 95%;
 	margin: 0 auto 1rem;
 	padding: 0.3125rem;
