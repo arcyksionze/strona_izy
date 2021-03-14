@@ -52,3 +52,6 @@ body {
     line-height: 32px;
     color:coral;
   }
+  h1, h2 {
+    font-family: 'Open Sans' Arial, sans-serif;
+  }
