@@ -66,7 +66,9 @@ table {
 * {
 	box-sizing: border-box;
 }
-
+nav {
+	font-size: 0px;
+}
 body {
   font-family: Merriweather, 'Times New Roman', serif;
   font-size: 1.125rem;
@@ -192,9 +194,7 @@ h1, h2, h3, h4, h5, h6, hgroup, ul, ol, dd, p, figure, pre, table, fieldset, hr,
 }
 
 /* NAGŁÓWEK */
-nav {
-	font-size: 10px;
-}
+
 
 nav ul {
 	background-color: #eee;
@@ -210,7 +210,7 @@ nav li {
 
 nav a {
 	text-decoration: none;
-	color: #c74f78;
+	color:gray;
 	display: block;
 }
 
