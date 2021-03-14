@@ -190,3 +190,44 @@ h1, h2, h3, h4, h5, h6, hgroup, ul, ol, dd, p, figure, pre, table, fieldset, hr,
 	color: #8c8e9b;
 
 }
+
+/* NAGŁÓWEK */
+nav {
+	font-size: 10px;
+}
+
+nav ul {
+	background-color: #eee;
+	text-align: center;
+}
+
+nav li {
+	font-size: 1.4rem;
+	line-height: 3rem;
+	height: 3rem;
+	border-bottom: 1px solid #ccc;
+}
+
+nav a {
+	text-decoration: none;
+	color: #c74f78;
+	display: block;
+}
+
+nav a:hover {
+	background-color: #fff;
+	transition: background-color .3s ease-in-out;
+}
+
+nav a.active {
+	background-color: #c74f78;
+	color: #eee;
+}
+
+@media (min-width: 600px) {
+	nav li {
+		display: inline-block;
+		border-bottom: none;
+		width: 7.5rem;
+	}
+}
