@@ -44,9 +44,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* część projektowa */
 body {
     font-family: Merriweather, 'Times New Roman', serif;
-    font-size: 18px;
+    font-size: 25px;
     line-height: 32px;
-    color: #333;
+    color:coral;
   }
