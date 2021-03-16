@@ -131,10 +131,10 @@ a { /* wszystkie a: lubię to, Obserwuj, pokaż więcej i pokaż więcej postów
 }
 
 /* NAGŁÓWEK */
-nav ul {
+.navi {
 	text-align: center;
-	margin-right: 1rem;
-	padding-right: 0.5rem;
+	margin-right: 0.1rem;
+	padding-right: 0.1rem;
 }
 
 nav li {
@@ -142,30 +142,31 @@ nav li {
 	font-size: 1.4rem; /* wielkość tekstu li tj. o mnie i kontakt */
 	line-height: 3rem; /* odstępy między wierszami */
 	height: 3rem; /* wysokość elementu */
-	width: 12rem;
-	border-bottom: 1px solid #ccc;
 	text-align: center;
 }
 
 nav a {
 	text-decoration: none;
-	color:gray;
+	color:gray; /* kolor textu "o mnie" i Kontakt" */
 	display: block;
+	margin: 0rem;
+	padding: 0rem;
+	right: 0rem;
+	left: 0rem;
 }
 
 nav a:hover {
 	background-color:turquoise;
-	transition: background-color .3s ease-in-out;
+	transition: background-color .2s ease-in-out;
 }
 
-@media (min-width: 100px) {
+@media (min-width: 300px) {
 	nav li {
 		display: inline-block;
 		border-bottom: none;
 		width: 7.5rem;
 	}
-	nav ul {
+	.navi {
 		text-align: right;
-
 	}
 }
