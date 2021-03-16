@@ -131,7 +131,7 @@ a { /* wszystkie a: lubię to, Obserwuj, pokaż więcej i pokaż więcej postów
 
 /* NAGŁÓWEK */
 nav {
-	text-align: right;
+	text-align: center;
 	margin-right: 0.1rem;
 	padding-right: 0.1rem;
 }
@@ -164,5 +164,8 @@ nav a:hover {
 		display: inline-block;
 		border-bottom: none;
 		width: 7.5rem;
+	}
+	nav {
+		text-align: right;
 	}
 }
