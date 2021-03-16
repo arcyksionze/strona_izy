@@ -1,4 +1,4 @@
-/* ==== A SIMPLE CSS RESET FROM ERIC MEYER ==== */
+/* ==== RESET CSS MAYERA ==== */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -12,7 +12,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, main{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -20,103 +20,62 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
 /* ==== HELPER COLORS FOR LAYOUT ==== */
 /*
 .main-header {
   background-color: rgba(255, 248, 53, .3);
-
 }
-
 .primary-content {
 	background-color: rgba(140, 96, 255, .3);
 }
-
 .post {
 	background-color: rgba(255, 0, 0, .3);
 }
-
 */
 
-/* === BASE STYLES === */
+/* === STYL GŁÓWNY === */
 * {
-	box-sizing: border-box;
+  box-sizing: border-box; /* po ustawieniu pudełka o wymiarach np 100px na 100px dodając marginesy, padding na końcu dodajemy box sizing border-box i pudełko razem z marginesami i padding ma wymiar 100 px na 100 px  */
 }
-nav {
-	font-size: 0px;
-}
-body {
+body { /* WSZYSTKO */
   font-family: Merriweather, 'Times New Roman', serif;
   font-size: 1.125rem;
-  line-height: 2rem;
+  line-height: 2.5rem; /* odstęp pomiędzy wierszami */
   color: #333;
 }
 
-h1, h2 {
+h1 { /* IZABEL BIZU */
+	font-size: 1.8rem;
+}
+
+h2 { /* DO ZOBACZENIA NIEBAWEM */
   font-family: 'Open Sans' Arial, sans-serif;
-}
-
-h1 {
-  font-size: 1.8rem;
-}
-
-h2 {
   font-size: 1.6rem;
   color: #e5127d;
 }
 
-.main-header p {
-  font-size: 1.125rem;
-  letter-spacing: 0.125rem;
+p { /*Biżuteria ręcznie robiona i Zapraszamy  */
+  font-size: 1.125rem; /* wielkość czcionki */
+  letter-spacing: 0.3rem; /* odległość pomiędzy literami */
   color: #8c8e9b;
 }
 
-.primary-content {
-	text-align: center;
-}
-.picture {
+  /*  .picture {
 	width: 100%;
+  }
+  */
+
+a { /* wszystkie a: lubię to, Obserwuj, pokaż więcej i pokaż więcej postów */
+	text-decoration: none; /* brak podkreślenia w "a" lubię to i Obserwuj */
 }
 
-a {
-	color: #e5127d;
-	text-decoration: none;
-}
-
-/* LAYOUT STYLES */
-
-/* Main Header Style */
-.main-header {
+.main-header { /* to jest nagłówek z IZABEL BIZU, BIŻUTERIA RĘCZNIE ROBIONA ORAZ LUBIĘ TO I OBSERWUJ */
 	text-align: center;
 	padding: 1.25rem;
 	color: #fff;
 	background-color: #42444e;
 }
-
 @media (min-width: 768px) {
 	.main-header {
 		position: fixed;
@@ -131,8 +90,11 @@ a {
 		}
 	}
 
-
-/* Primary Content Wrapper Styles */
+.primary-content {
+	background-color:mediumturquoise;
+	text-align: center;
+	padding: 1rem;
+}
 @media (min-width: 768px) {
 	.primary-content {
 		float: right;
@@ -140,8 +102,7 @@ a {
 		max-width: 812px;
 	}
 }
-
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
 	.primary-content {
 		float: none;
 		position: absolute;
@@ -149,22 +110,8 @@ a {
 	}
 }
 
-
-/* Article Styles */
-.post {
-	text-align: center;
-
-	width: 95%;
-	margin: 0 auto 1rem;
-	padding: 0.3125rem;
-}
-
 .picture {
 	width: 100%;
-}
-
-h1, h2, h3, h4, h5, h6, hgroup, ul, ol, dd, p, figure, pre, table, fieldset, hr, img, .main-header, .primary-content {
-	margin-bottom: 1rem;
 }
 /* COMPONENT STYLES */
 .button {
@@ -178,34 +125,26 @@ h1, h2, h3, h4, h5, h6, hgroup, ul, ol, dd, p, figure, pre, table, fieldset, hr,
 	width: 100px;
 	font-family: "Open Sans", sans-serif;
 }
-
 .button:hover {
 	border: 1px solid gray;
 	background-color: aqua;
 }
 
-.load {
-	display: block;
-	text-align: center;
-	padding: 0.625rem;
-	font-size: 1.25rem;
-	color: #8c8e9b;
-
-}
-
 /* NAGŁÓWEK */
-
-
 nav ul {
-	background-color: #eee;
 	text-align: center;
+	margin-right: 1rem;
+	padding-right: 0.5rem;
 }
 
 nav li {
-	font-size: 1.4rem;
-	line-height: 3rem;
-	height: 3rem;
+	background-color: #eee;
+	font-size: 1.4rem; /* wielkość tekstu li tj. o mnie i kontakt */
+	line-height: 3rem; /* odstępy między wierszami */
+	height: 3rem; /* wysokość elementu */
+	width: 12rem;
 	border-bottom: 1px solid #ccc;
+	text-align: center;
 }
 
 nav a {
@@ -215,19 +154,18 @@ nav a {
 }
 
 nav a:hover {
-	background-color: #fff;
+	background-color:turquoise;
 	transition: background-color .3s ease-in-out;
 }
 
-nav a.active {
-	background-color: #c74f78;
-	color: #eee;
-}
-
-@media (min-width: 600px) {
+@media (min-width: 100px) {
 	nav li {
 		display: inline-block;
 		border-bottom: none;
 		width: 7.5rem;
+	}
+	nav ul {
+		text-align: right;
+
 	}
 }
