@@ -91,9 +91,8 @@ a { /* wszystkie a: lubię to, Obserwuj, pokaż więcej i pokaż więcej postów
 	}
 
 .primary-content {
-	background-color:mediumturquoise;
 	text-align: center;
-	padding: 1rem;
+	padding: 2rem;
 }
 @media (min-width: 768px) {
 	.primary-content {
