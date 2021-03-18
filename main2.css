@@ -1,0 +1,113 @@
+/* ==== RESET CSS MAYERA ==== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, main{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* === STYL GŁÓWNY === */
+* {
+  box-sizing: border-box; /* po ustawieniu pudełka o wymiarach np 100px na 100px dodając marginesy, padding na końcu dodajemy box sizing border-box i pudełko razem z marginesami i padding ma wymiar 100 px na 100 px  */
+}
+ body { /* WSZYSTKO */
+  font-family: Merriweather, 'Times New Roman', serif;
+  font-size: 1.125rem;
+  line-height: 2.5rem; /* odstęp pomiędzy wierszami */
+}
+
+h1 { /* IZABEL BIZU */
+	font-size: 1.8rem;
+}
+
+h2 { /* to jest pierwsza podstrona */
+  font-family: 'Open Sans' Arial, sans-serif;
+  font-size: 1.6rem;
+  color: #e5127d;
+}
+
+p { /*Biżuteria ręcznie robiona i ...:)  */
+  font-size: 1.125rem; /* wielkość czcionki */
+  letter-spacing: 0.3rem; /* odległość pomiędzy literami */
+  color: #8c8e9b;
+}
+
+a { /* wszystkie a: lubię to, Obserwuj, pokaż więcej i pokaż więcej postów */
+	text-decoration: none; /* brak podkreślenia w "a" lubię to i Obserwuj */
+}
+
+nav {
+	background-color: yellow;
+	width: 100%;
+	height: 4rem;
+
+}
+.omnie, .kontakt {
+	display: inline-block;
+	text-align: center;
+	border: 1px solid grey;
+	color: grey;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	margin-right: 1px;
+	width: 100px;
+}
+.omnie:hover {
+	border: 1px solid gray;
+	background-color: aqua;
+}
+.kontakt:hover {
+	border: 1px solid gray;
+	background-color: aqua;
+}
+
+.navi {
+	text-align: right;
+}
+nav ul li { /* dotyczy rozmieszczenia dwóch bloków o mnie i kontakt */
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: 5px;
+}
+
+.naglowek { /* to jest nagłówek z IZABEL BIZU, BIŻUTERIA RĘCZNIE ROBIONA ORAZ LUBIĘ TO I OBSERWUJ */
+	text-align: center;
+	background-color: #42444e;
+    color: white;
+}
+/* przyciski: Lubię to i Obserwuj */
+.przycisk {
+	font-family: "Open Sans", sans-serif;
+	display: inline-block;
+	border: 1px solid #8c8e9b; /* obwódka, krawędź */
+	color: #8c8e9b;
+	border-radius: 10px; /* zaokrąglone krawędzie obwódki */
+	width: 100px;
+	margin-bottom: 10px; /* margines dolny */
+
+}
+.przycisk:hover {
+	border: 1px solid gray;
+	background-color: aqua;
+}
+
+.tresc {
+	text-align: center;
+	background-color: goldenrod;
+
+}
