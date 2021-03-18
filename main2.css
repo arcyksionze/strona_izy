@@ -1,25 +1,5 @@
-/* ==== RESET CSS MAYERA ==== */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video, main{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
+/* reset meyere */
+@import url("reset-css.css");
 
 /* === STYL GŁÓWNY === */
 * {
@@ -52,27 +32,24 @@ a { /* wszystkie a: lubię to, Obserwuj, pokaż więcej i pokaż więcej postów
 }
 
 nav {
-	background-color: yellow;
+	/*  background-color: yellow;*/
 	width: 100%;
-	height: 4rem;
+	height: 3rem;
 
 }
 .omnie, .kontakt {
 	display: inline-block;
 	text-align: center;
-	border: 1px solid grey;
-	color: grey;
-	border-radius: 10px;
+	color:grey;
 	margin-bottom: 10px;
 	margin-right: 1px;
 	width: 100px;
+	background-color:#eee;
 }
 .omnie:hover {
-	border: 1px solid gray;
 	background-color: aqua;
 }
 .kontakt:hover {
-	border: 1px solid gray;
 	background-color: aqua;
 }
 
@@ -81,7 +58,7 @@ nav {
 }
 nav ul li { /* dotyczy rozmieszczenia dwóch bloków o mnie i kontakt */
 	display: inline-block;
-	margin-top: 10px;
+	margin-top: 0px;
 	margin-right: 5px;
 }
 
@@ -108,6 +85,6 @@ nav ul li { /* dotyczy rozmieszczenia dwóch bloków o mnie i kontakt */
 
 .tresc {
 	text-align: center;
-	background-color: goldenrod;
+	padding: 5rem;
 
 }
