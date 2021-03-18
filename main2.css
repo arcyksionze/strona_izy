@@ -41,10 +41,9 @@ nav {
 	display: inline-block;
 	text-align: center;
 	color:grey;
-	margin-bottom: 10px;
-	margin-right: 1px;
 	width: 100px;
 	background-color:#eee;
+
 }
 .omnie:hover {
 	background-color: aqua;
@@ -52,14 +51,12 @@ nav {
 .kontakt:hover {
 	background-color: aqua;
 }
-
 .navi {
 	text-align: right;
 }
+
 nav ul li { /* dotyczy rozmieszczenia dwóch bloków o mnie i kontakt */
-	display: inline-block;
-	margin-top: 0px;
-	margin-right: 5px;
+	display: inline;
 }
 
 .naglowek { /* to jest nagłówek z IZABEL BIZU, BIŻUTERIA RĘCZNIE ROBIONA ORAZ LUBIĘ TO I OBSERWUJ */
