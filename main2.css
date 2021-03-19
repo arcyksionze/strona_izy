@@ -1,14 +1,11 @@
 /* reset meyere */
 @import url("reset-css.css");
 
-/* === STYL GŁÓWNY === */
-* {
-  box-sizing: border-box; /* po ustawieniu pudełka o wymiarach np 100px na 100px dodając marginesy, padding na końcu dodajemy box sizing border-box i pudełko razem z marginesami i padding ma wymiar 100 px na 100 px  */
-}
  body { /* WSZYSTKO */
   font-family: Merriweather, 'Times New Roman', serif;
   font-size: 1.125rem;
   line-height: 2.5rem; /* odstęp pomiędzy wierszami */
+	margin: 0px;
 }
 
 h1 { /* IZABEL BIZU */
@@ -55,8 +52,12 @@ nav {
 	text-align: right;
 }
 
+.omnie {
+	margin-right: -4px;
+}
+
 nav ul li { /* dotyczy rozmieszczenia dwóch bloków o mnie i kontakt */
-	display: inline;
+	display: inline-block;
 }
 
 .naglowek { /* to jest nagłówek z IZABEL BIZU, BIŻUTERIA RĘCZNIE ROBIONA ORAZ LUBIĘ TO I OBSERWUJ */
@@ -85,3 +86,5 @@ nav ul li { /* dotyczy rozmieszczenia dwóch bloków o mnie i kontakt */
 	padding: 5rem;
 
 }
+
+/* margin: 1 2 3 4 tzn. 1 górny margines, 2 prawy, 3 dolny, 4 lewy; jeśli wpiszemy tylko dwie wartości będą oznaczały: 1-góra i dół 2- prawo i lewo; wielkość np 20px auto oznacza że 20px to margines górny i dolny natomiast lewy iprawy będzie ustawiony automatycznie */
