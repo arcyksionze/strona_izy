@@ -56,6 +56,12 @@ a { /* wszystkie a: lubię to, Obserwuj, pokaż więcej i pokaż więcej postów
 .primary-content {
 	text-align: center;
 	padding: 2rem;
+	height: 100%;
+	width: 100%100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-position: ;
 }
 @media (min-width: 768px) {
 	.primary-content {
