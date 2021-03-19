@@ -100,11 +100,11 @@ nav ul li { /* dotyczy rozmieszczenia dwóch bloków o mnie i kontakt */
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	text-align: center;
-	padding: 8rem;
 	margin-top: -2.6rem;
 	font-family: 'Merienda';
-
+	height: 90px;
+	text-align: center;
+	padding: 10%;
 }
 
 .powrot {
@@ -114,7 +114,7 @@ nav ul li { /* dotyczy rozmieszczenia dwóch bloków o mnie i kontakt */
 
 footer {
 	width: 100%;
-	height: 150px;
+	height: 5rem;
 	background-color: slateblue;
 }
 
