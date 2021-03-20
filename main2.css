@@ -47,7 +47,7 @@ a { /* wszystkie a: lubię to, Obserwuj, pokaż więcej i pokaż więcej postów
 	background-color: #42444e;
   color: white;
 	width: 100%;
-	height: 9rem;
+	height: 11rem;
 }
 .przycisk {
 	font-family: "Open Sans", sans-serif;
@@ -109,13 +109,6 @@ a { /* wszystkie a: lubię to, Obserwuj, pokaż więcej i pokaż więcej postów
 	padding-top: 2rem;
 }
 
-@media (max-width: 360px) {
-	.sek5 {
-		width: 100%;
-		height: 100rem;
-	}
-
-}
 
 /* margin: 1 2 3 4 tzn. 1 górny margines, 2 prawy, 3 dolny, 4 lewy; jeśli wpiszemy tylko dwie wartości będą oznaczały: 1-góra i dół 2- prawo i lewo; wielkość np 20px auto oznacza że 20px to margines górny i dolny natomiast lewy iprawy będzie ustawiony automatycznie */
 
