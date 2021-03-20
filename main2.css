@@ -120,7 +120,7 @@ a { /* wszystkie a: lubię to, Obserwuj, pokaż więcej i pokaż więcej postów
 	text-align: center;
 }
 
-.sek6 a:link { /* nieodwiedzony link */
+.sek6 a:link { /* nieodwiedzony link */ /* kolejność tych pozycji jest istotna */
 	color: #FF0000;
 }
 
@@ -132,6 +132,9 @@ a { /* wszystkie a: lubię to, Obserwuj, pokaż więcej i pokaż więcej postów
 /* po najechaniu */
 .sek6 a:hover {
 	color: #FF00FF;
+	padding: 20px;
+	background-color: cornflowerblue;
+	font-size: 40px;
 }
 
 /* aktywny */
