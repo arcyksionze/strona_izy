@@ -1,4 +1,5 @@
 @import url(reset-css.css);
+@import url(ramka.css);
 
 html {
   background: #ffc107 url(obrazy/tlo.jpg) fixed no-repeat;
@@ -66,6 +67,20 @@ figure {
   float: left;
   margin-top: 20%;
 }
+
+header {
+  display: none; /* ukrywanie kontenera */
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 1rem;
+  background: white;
+  z-index: 6;
+}
+
 .summary {
   font-size: 2.4rem;
   font-style: italic; /* pochylenie tekstu */
@@ -93,10 +108,15 @@ figure {
 }
 
 .menu {
-  background: url(obrazy/menu.svg) right no-repeat;
+  background: #fff url(obrazy/menu.svg) center no-repeat;
+  padding: 1rem;
   height: 3.2rem;
   display: block;
   margin: 1rem;
+  position: fixed; /* musimy mieć określoną wysokość i szerokosć aby był widoczny. mamy wtedy element w jednym miejscu na stronie mimo przewijania */
+  width: 3.2rem;
+  right: 0;
+  z-index: 9999;
 }
 
 .text {
@@ -104,9 +124,37 @@ figure {
   column-count: 2; /* podział na liczbę kolumn */
 }
 
-header {
-  display: none; /* ukrywanie kontenera */
+@media all and (max-width: 1280px) {
+  html {
+    background: #ffc107;
+  }
+  section {
+    width: 75%;
+  }
+
+  .bg {
+    background: url(obrazy/bg.jpg) fixed no-repeat;
+    height: 300px;
+  }
 }
+
+@media all and (max-width: 768px) {
+  hgroup {
+    margin-left: 0;
+  }
+  figure {
+    display: none;
+  }
+  section {
+    width: 90%;
+    min-width: 300px;
+    right: 5%;
+  }
+  .text {
+    column-count: 1; /* podział na liczbę kolumn */
+  }
+}
+
 
 
 
