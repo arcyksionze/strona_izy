@@ -1,0 +1,230 @@
+@import url(reset-css.css);
+@import url(ramka.css);
+
+html {
+  background: #ffc107 url(obrazy/tlo.jpg) fixed no-repeat;
+  background-size: contain; /* tło będzie zawsze dopasowane do kontenera i w dobrych proporcjach. W przypadku body wysokość kontenera to wysokość naszej treści w związku z tym tam gdzie będzie kończyła się treść tam też będzie kończył się obrazek */
+  font-size: 62.5%; /* jest to czcionka o wielkości 10px */
+  font-family: 'Playfair Display', serif;
+  color: #48504e;
+}
+
+.orange { color: #ffc107; }
+.grey { color: #48504e;}
+.lightgrey { color: #d4d4d3; }
+
+h1 {
+  font-size: 3.7rem; /* 37px */
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 3.5rem;
+  margin: 4rem;
+  display: inline-block; /* element liniowy zachowuje się częściowo jak blokowy. Możemy dodawać marginesy i paddingi */
+  border-top-left-radius: 2rem;
+}
+h2 { font-size: 2.7rem; /* 27px */ }
+h3 {
+  font-size: 3.1rem;
+  position: absolute;
+  right: 0;
+  bottom: 5%;
+}
+h3, h2 { /* h3 jest elementem blokowym i rozszerza się na całą stronę. Jeśli zmienimy display na inline wszystko się zmienia */
+  color: white; /* 31px */
+  background-color: #48504e;
+  padding: 1.5rem;
+  display: inline-block;
+}
+
+h4 {
+  font-size: 2rem;
+  padding: 2rem 1rem;
+}
+
+p { font-size: 1.8rem; line-height: 1.55; /* 18px */ }
+
+ul {
+  font-size: 2.3rem; line-height: 1.75;
+}
+
+footer p { font-size: 1.4rem; color: #d4d4d3; /* 14px */}
+strong {
+  font-weight: bold; /* pogrubienie tekstu */
+}
+em { /* tekst wyróżniony semantycznie */
+  background-color: rgba(255, 255, 255, 0.8); /* przezroczystość została ustawiona na 80% tj. 0.8 */
+}
+section {
+  width: 50%;
+  min-width: 600px;
+  max-width: 850px;
+  position: absolute;
+  right: 5%;
+}
+article {
+  margin-bottom: 6rem;
+}
+hgroup {
+  margin-left: -25%;
+  position: relative;
+  display: inline-block;
+}
+figure {
+  margin-left: -25%;
+  float: left;
+  margin-top: 20%;
+}
+
+header {
+  display: none;
+  background: #48504e;
+  color: #fff;
+  height: 30rem;
+  padding: 10rem;
+  /*  display: none; /* ukrywanie kontenera */
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 1rem;
+  background: white;
+  z-index: 6;
+}
+
+nav {
+  float: right;
+}
+
+nav li {
+  text-align: right; /* wyrównanie tekstu */
+  background: url(obrazy/strzalka.svg) right no-repeat;
+  padding-right: 4rem;
+  line-height: 1.5rem;
+  margin: 3rem;
+}
+
+form {
+  float: left;
+  width: 35rem;
+}
+
+input, textarea {
+  width: 35rem;
+  background: none;
+  border: 2px #d4d4d3 solid;
+  margin: 0.5rem;
+  padding: 1rem;
+  color: #fff;
+  font-size: 1.7rem;
+}
+
+button {
+  background: #ffc107;
+  border: none;
+  padding: 2rem 6rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  float: right;
+  cursor: pointer; /* ikonka z łapką */
+  margin-top: -1.5rem;
+  margin-right: -3rem;
+}
+
+.summary {
+  font-size: 2.4rem;
+  font-style: italic; /* pochylenie tekstu */
+}
+.dot {
+  width: 1rem;
+  height: 1rem;
+  background-color: #48504e;
+  margin: 3rem auto; /* 1 rem oznacza margines góra dół, auto natomiast wyśrodkowuje nam kontener prawo lewo */
+  border-radius: 2rem; /* zaokrąglenie wszystkim krawędzi */
+}
+
+.deleted {
+  text-decoration: line-through; /* tekst przekreślony */
+}
+
+.button-more {
+  display: inline-block;
+  border: 1px dashed #000;
+  font-size: 3rem;
+  padding: 1rem 1.5rem; /* 1rem góra dół i 1,5rem prawo lewo */
+  text-decoration: none;
+  position: absolute;
+  right: 0;
+}
+
+.menu {
+  background: #fff url(obrazy/menu.svg) center no-repeat;
+  padding: 1rem;
+  height: 3.2rem;
+  display: block;
+  margin: 1rem;
+  position: fixed; /* musimy mieć określoną wysokość i szerokosć aby był widoczny. mamy wtedy element w jednym miejscu na stronie mimo przewijania */
+  width: 3.2rem;
+  right: 0;
+  z-index: 9999;
+}
+
+.hoverme:hover header { /* menu nie znika */
+  display: block;
+}
+
+.text {
+  padding-top: 4rem;
+  column-count: 2; /* podział na liczbę kolumn */
+}
+
+@media all and (max-width: 1280px) {
+  html {
+    background: #ffc107;
+  }
+  section {
+    width: 75%;
+  }
+
+  .bg {
+    background: url(obrazy/bg.jpg) fixed no-repeat;
+    height: 300px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  hgroup {
+    margin-left: 0;
+  }
+  figure {
+    display: none;
+  }
+  section {
+    width: 90%;
+    min-width: 300px;
+    right: 5%;
+  }
+  .text {
+    column-count: 1; /* podział na liczbę kolumn */
+  }
+}
+
+
+
+
+/*
+1) https://www.pexels.com/pl-pl/  jest to strona ze zdjęciami, które można wykorzystać zarówno prywatnie jak i komercyjnie
+
+2) https://iconmonstr.com/ strona z ikonami
+
+3) https://www.iconfinder.com/ strona z ikonami
+
+4) https://tympanus.net/codrops/ strona z ikonami/zestaw ikon
+
+5) Jeśli grafika jest tylko jako ozdobnik osadzamy ją jako tło w CSS
+
+6) height: 100vh; /* obraz zawsze będzie na całą wysokość okna
+
+7) najlepszym formatem plików dla grafik jest SVG
+
+*/
