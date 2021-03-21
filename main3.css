@@ -34,6 +34,12 @@ h3, h2 { /* h3 jest elementem blokowym i rozszerza się na całą stronę. Jeśl
   padding: 1.5rem;
   display: inline-block;
 }
+
+h4 {
+  font-size: 2rem;
+  padding: 2rem 1rem;
+}
+
 p { font-size: 1.8rem; line-height: 1.55; /* 18px */ }
 
 ul {
@@ -69,7 +75,12 @@ figure {
 }
 
 header {
-  display: none; /* ukrywanie kontenera */
+  display: none;
+  background: #48504e;
+  color: #fff;
+  height: 30rem;
+  padding: 10rem;
+  /*  display: none; /* ukrywanie kontenera */
 }
 
 footer {
@@ -79,6 +90,45 @@ footer {
   padding: 1rem;
   background: white;
   z-index: 6;
+}
+
+nav {
+  float: right;
+}
+
+nav li {
+  text-align: right; /* wyrównanie tekstu */
+  background: url(obrazy/strzalka.svg) right no-repeat;
+  padding-right: 4rem;
+  line-height: 1.5rem;
+  margin: 3rem;
+}
+
+form {
+  float: left;
+  width: 35rem;
+}
+
+input, textarea {
+  width: 35rem;
+  background: none;
+  border: 2px #d4d4d3 solid;
+  margin: 0.5rem;
+  padding: 1rem;
+  color: #fff;
+  font-size: 1.7rem;
+}
+
+button {
+  background: #ffc107;
+  border: none;
+  padding: 2rem 6rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  float: right;
+  cursor: pointer; /* ikonka z łapką */
+  margin-top: -1.5rem;
+  margin-right: -3rem;
 }
 
 .summary {
@@ -117,6 +167,10 @@ footer {
   width: 3.2rem;
   right: 0;
   z-index: 9999;
+}
+
+.hoverme:hover header { /* menu nie znika */
+  display: block;
 }
 
 .text {

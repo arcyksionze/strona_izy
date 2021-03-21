@@ -13,22 +13,30 @@
 
   <body>
 
-    <a class="menu" href="#"></a> <!-- tutaj podepniemy znak ikonki rozwijanej nawigacji w prawym górnym rogu -->
+    <div class="hoverme">
 
-    <header>
-      <!-- tutaj będzie formularz -->
+      <a class="menu" href="#"></a> <!-- tutaj podepniemy znak ikonki rozwijanej nawigacji w prawym górnym rogu -->
+      <header class="droptown-content"> <!-- tutaj jest formularz -->
+          <h4>Skontaktuj się z nami:</h4>
 
-      <nav>
-        <ul>
-          <li>Czy Twoja wymarzona posada jeszcze nie powstała?</li>
-          <li>Jak Cię widzą, tak Cię piszą</li>
-          <li>Dopóki Facebook ich nie rozłączy</li>
-          <li>Dobre meme do złej gry</li>
-          <li>Projektowanie śmieci</li>
-          <li>Jak Cię widzą, tak Cię piszą</li>
-        </ul>
-      </nav> <!-- nawigacja -->
-    </header>
+          <form action="/mail" method="POST">
+            <input type="text">
+            <input type="email">
+            <textarea></textarea>
+            <button>WYŚLIJ ></button>
+          </form>
+        <nav>
+          <ul>
+            <li>Czy Twoja wymarzona posada jeszcze nie powstała?</li>
+            <li>Jak Cię widzą, tak Cię piszą</li>
+            <li>Dopóki Facebook ich nie rozłączy</li>
+            <li>Dobre meme do złej gry</li>
+            <li>Projektowanie śmieci</li>
+            <li>Jak Cię widzą, tak Cię piszą</li>
+          </ul>
+        </nav> <!-- nawigacja -->
+      </header>
+    </div>
 
     <div class="bg"></div>
 
