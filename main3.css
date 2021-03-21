@@ -1,25 +1,38 @@
 @import url(reset-css.css);
 
 html {
+  background: #ffc107 url(obrazy/tlo.jpg) fixed no-repeat;
+  background-size: contain; /* tło będzie zawsze dopasowane do kontenera i w dobrych proporcjach. W przypadku body wysokość kontenera to wysokość naszej treści w związku z tym tam gdzie będzie kończyła się treść tam też będzie kończył się obrazek */
   font-size: 62.5%; /* jest to czcionka o wielkości 10px */
   font-family: 'Playfair Display', serif;
   color: #48504e;
-}
-
-body {
-  background-color: #ffc107;
 }
 
 .orange { color: #ffc107; }
 .grey { color: #48504e;}
 .lightgrey { color: #d4d4d3; }
 
-h1 { font-size: 3.7rem; /* 37px */ }
-
-h2 { font-size: 2.7rem; color: white; /* 27px */ }
-
-h3 { font-size: 3.1rem; color: white; /* 31px */ }
-
+h1 {
+  font-size: 3.7rem; /* 37px */
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 3.5rem;
+  margin: 4rem;
+  display: inline-block; /* element liniowy zachowuje się częściowo jak blokowy. Możemy dodawać marginesy i paddingi */
+  border-top-left-radius: 2rem;
+}
+h2 { font-size: 2.7rem; /* 27px */ }
+h3 {
+  font-size: 3.1rem;
+  position: absolute;
+  right: 0;
+  bottom: 5%;
+}
+h3, h2 { /* h3 jest elementem blokowym i rozszerza się na całą stronę. Jeśli zmienimy display na inline wszystko się zmienia */
+  color: white; /* 31px */
+  background-color: #48504e;
+  padding: 1.5rem;
+  display: inline-block;
+}
 p { font-size: 1.8rem; line-height: 1.55; /* 18px */ }
 
 ul {
@@ -27,11 +40,89 @@ ul {
 }
 
 footer p { font-size: 1.4rem; color: #d4d4d3; /* 14px */}
-
+strong {
+  font-weight: bold; /* pogrubienie tekstu */
+}
+em { /* tekst wyróżniony semantycznie */
+  background-color: rgba(255, 255, 255, 0.8); /* przezroczystość została ustawiona na 80% tj. 0.8 */
+}
+section {
+  width: 50%;
+  min-width: 600px;
+  max-width: 850px;
+  position: absolute;
+  right: 5%;
+}
+article {
+  margin-bottom: 6rem;
+}
+hgroup {
+  margin-left: -25%;
+  position: relative;
+  display: inline-block;
+}
+figure {
+  margin-left: -25%;
+  float: left;
+  margin-top: 20%;
+}
 .summary {
   font-size: 2.4rem;
+  font-style: italic; /* pochylenie tekstu */
+}
+.dot {
+  width: 1rem;
+  height: 1rem;
+  background-color: #48504e;
+  margin: 3rem auto; /* 1 rem oznacza margines góra dół, auto natomiast wyśrodkowuje nam kontener prawo lewo */
+  border-radius: 2rem; /* zaokrąglenie wszystkim krawędzi */
+}
+
+.deleted {
+  text-decoration: line-through; /* tekst przekreślony */
+}
+
+.button-more {
+  display: inline-block;
+  border: 1px dashed #000;
+  font-size: 3rem;
+  padding: 1rem 1.5rem; /* 1rem góra dół i 1,5rem prawo lewo */
+  text-decoration: none;
+  position: absolute;
+  right: 0;
+}
+
+.menu {
+  background: url(obrazy/menu.svg) right no-repeat;
+  height: 3.2rem;
+  display: block;
+  margin: 1rem;
+}
+
+.text {
+  padding-top: 4rem;
+  column-count: 2; /* podział na liczbę kolumn */
 }
 
 header {
   display: none; /* ukrywanie kontenera */
 }
+
+
+
+/*
+1) https://www.pexels.com/pl-pl/  jest to strona ze zdjęciami, które można wykorzystać zarówno prywatnie jak i komercyjnie
+
+2) https://iconmonstr.com/ strona z ikonami
+
+3) https://www.iconfinder.com/ strona z ikonami
+
+4) https://tympanus.net/codrops/ strona z ikonami/zestaw ikon
+
+5) Jeśli grafika jest tylko jako ozdobnik osadzamy ją jako tło w CSS
+
+6) height: 100vh; /* obraz zawsze będzie na całą wysokość okna
+
+7) najlepszym formatem plików dla grafik jest SVG
+
+*/
