@@ -1,0 +1,212 @@
+/* reset meyere */
+@import url("reset-css.css");
+
+@font-face {
+	font-family: "alex";
+	src: url("alex.ttf");
+	src: url(KaushanScript-Regular.otf);
+}
+
+@font-face {
+	font-family: "kau";
+	src: url(KaushanScript-Regular.otf);
+}
+
+body {
+	/* WSZYSTKO */
+	font-family: Merriweather, 'Times New Roman', serif;
+	font-size: 10px;
+	line-height: 2.5rem;
+	/* odstęp pomiędzy wierszami */
+}
+
+/*
+1) font-weight: pogrubienie tekstu
+2) line-height: odstępy pomiędzy wierszami tekstu
+3) font-style: tekst pochylony
+4) text-indent: wcięcie w tekście w rem
+5) text-transform: uppercase - zmienia trzcionkę na WIELKIE LITERY
+6) text-decoration: np możemy ustawiś podkreślanie textu
+*/
+
+h1 {
+	/* IZABEL BIZU */
+	font-size: 2.5rem;
+}
+
+h2 {
+	/* to jest pierwsza podstrona */
+	font-family: 'Open Sans'Arial, sans-serif;
+	font-size: 1.6rem;
+	color: #e5127d;
+}
+
+p {
+	/*Biżuteria ręcznie robiona i ...:)  */
+	font-size: 1.125rem;
+	/* wielkość czcionki */
+	letter-spacing: 0.3rem;
+	/* odległość pomiędzy literami */
+	color: #8c8e9b;
+}
+
+a {
+	/* wszystkie a: lubię to, Obserwuj, pokaż więcej i pokaż więcej postów */
+	text-decoration: none;
+	/* brak podkreślenia w "a" lubię to i Obserwuj */
+	color: honeydew;
+}
+
+.sek1 {
+	/* to jest nagłówek z IZABEL BIZU, BIŻUTERIA RĘCZNIE ROBIONA ORAZ LUBIĘ TO I OBSERWUJ */
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background-color: #42444e;
+	color: white;
+	width: 100vw;
+	padding-top: 1rem;
+	padding-bottom: 0.5rem;
+}
+
+.przycisk1,.przycisk2 {
+	font-family: "Open Sans", sans-serif;
+	font-size: 0.8rem;
+	border: 1px solid #8c8e9b;
+	/* obwódka, krawędź */
+	color: #8c8e9b;
+	border-radius: 10px;
+	/* zaokrąglone krawędzie obwódki */
+	padding: 0.7rem;
+	;
+}
+
+.przycisk1:hover {
+	border: 1px solid gray;
+	background-color: aqua;
+}
+
+.przycisk2:hover {
+	border: 1px solid gray;
+	background-color: aqua;
+}
+
+ul {
+	display: flex;
+	flex-direction: row-reverse;
+	position: relative;
+}
+
+.sek2 {
+	text-align: center;
+	width: 100vw;
+	background-color: #FF0000;
+}
+
+.kontakt,
+.omnie {
+	background-color: #eee;
+	color: gray;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.kontakt {
+	margin-right: 1rem;
+}
+
+.omnie:hover {
+	background-color: aqua;
+}
+
+.kontakt:hover {
+	background-color: aqua;
+}
+
+.zdj {
+	display: flex;
+	margin-top: -2.5rem;
+	margin-bottom: 0rem;
+	background: yellow;
+}
+
+.phot {
+width: 100vw;
+height: 80vh;
+}
+
+.powr {
+	display: flex;
+	justify-content: center;
+}
+.sek4 {
+	color:grey;
+	font-family: "Open Sans", sans-serif;
+	font-size: 0.8rem;
+	border: 1px solid #8c8e9b;
+	/* obwódka, krawędź */
+	background-color: royalblue;
+	border-radius: 10px;
+	/* zaokrąglone krawędzie obwódki */
+	padding: 0.7rem;
+	margin: ;
+}
+
+.sek5 {
+	width: 100%;
+	height: 5rem;
+	bottom: 0;
+	background-color: grey;
+	text-align: center;
+	padding-top: 2rem;
+}
+
+.sek5 p {
+	color: black;
+}
+
+.sek6 {
+	width: 100%;
+	height: 5rem;
+	text-align: center;
+}
+
+.sek6 a:link {
+	/* nieodwiedzony link */
+	/* kolejność tych pozycji jest istotna */
+	color: #FF0000;
+}
+
+/* odwiedzony link */
+.sek6 a:visited {
+	color: #00FF00;
+}
+
+/* po najechaniu */
+.sek6 a:hover {
+	color: #FF00FF;
+	padding: 20px;
+	background-color: cornflowerblue;
+	font-size: 40px;
+}
+
+/* aktywny */
+.sek6 a:active {
+	color: #0000FF;
+}
+
+
+/* margin: 1 2 3 4 tzn. 1 górny margines, 2 prawy, 3 dolny, 4 lewy; jeśli wpiszemy tylko dwie wartości będą oznaczały: 1-góra i dół 2- prawo i lewo; wielkość np 20px auto oznacza że 20px to margines górny i dolny natomiast lewy iprawy będzie ustawiony automatycznie */
+
+/* 1em i 1rem=100% */
+
+/* POZYCJONOWANIE */
+/*
+1) position: relative - pozwala nam dodawanie marginesów z ręki. np. margin-top itp. kontenery mogą się na siebie nachodzić
+2) position: absolute: odnosi się do rodzica
+3) position: fixed - ustawia kontemer zawsze w tym samym miejscu przeglądarki podczas przeciągania
+4) float left lub right jest to opcja powodująca opływanie tekstu. clear: both skreśla wcześniejsze float left lub right
+
+*/
